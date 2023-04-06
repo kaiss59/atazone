@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+// $id_categorie = $_POST['id_categorie'];
 $nom_categorie = $_POST['nom_categorie'] ?? null;
 
 if(

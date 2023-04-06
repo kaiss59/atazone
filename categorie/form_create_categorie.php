@@ -25,6 +25,7 @@ session_start();
             <label for="nom_categorie">Nom de la catégorie :</label>
             <input type="text" name="nom_categorie" id="nom_categorie" placeholder="Entrez le nom" required>
         </div>
+        <!-- <div><input type="hidden" name="id_categorie"></div> -->
         <div><input type="submit" value="Ajouter" name="enregistrer"></div>
     </form>
 </body>

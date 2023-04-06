@@ -4,6 +4,14 @@ require_once __DIR__ . '/dbCon_categorie.php';
 $stmt = $pdo->query('select * from categorie');
 $tabCategories = $stmt->fetchAll();
 
+var_dump($tabCategories);
+
+// if (isset($_SESSION['modif'])) {
+//     echo $_SESSION['modif'];
+//     unset($_SESSION['modif']);
+// }
+
+
 foreach ($tabCategories as $index => $categorie) {
     echo '
     <div class="ligne">

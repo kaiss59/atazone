@@ -29,9 +29,9 @@ if (isset($_SESSION['compte'])) {
         </div> -->
         <div>
             <label for="nouvelle_categorie">Nouvelle catégorie : </label>
-            <input type="text" name="nom_categorie" id="nom_categorie" value="">
+            <input type="text" name="nom_categorie" id="nom_categorie" placeholder="Entrez le nouveau nom">
         </div>
-        <div><input type="hidden" name="id_categorie"></div>
+        <div><input type="hidden" name="id_categorie" id="id_categorie"></div>
         <div><input type="submit" value="Modifier" name="modifier"></div>
         
     </form>

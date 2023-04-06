@@ -1,7 +1,7 @@
 <?php
 session_start();
-// $id_categorie = (int)$_POST ['id_categorie'];
-$id_categorie = $_POST['id_categorie'];
+$id_categorie = (int)$_POST ['id_categorie'];
+// $id_categorie = $_POST['id_categorie'];
 $nom_categorie = $_POST['nom_categorie'] ?? null;
 // var_dump($_SESSION);
 
@@ -27,3 +27,5 @@ if (
 } else {
     $_SESSION['modif'] = 'Veuillez vérifier les informations saisies sur le formulaire';
 }
+// var_dump($_SESSION);
+header('location:getAllCategories.php');
